@@ -1,5 +1,5 @@
 function findCaliforniaCafes(searchingIem) {
-    // Given data sets
+    
     const cafes = [
         { "name": "Ashley's Cafe", "place_id": "12hydbdf76sljfts87sbfis" },
         { "name": "Avenue Bakery Cafe", "place_id": "jahgde7wgdiau8ewsahgosd" },
@@ -20,11 +20,11 @@ function findCaliforniaCafes(searchingIem) {
         { "id": "urhw3837ehalod7w02b7835", "street_no": "225", "locality": "Macarthur Blvd", "postal_code": "20687", "lat": "35.77813", "long": "119.41791" }
     ];
 
-    // Filter cafes based on the searchTerm
+   
     const filteredCafes = cafes.filter(Itercafe => Itercafe.name.toLowerCase().includes(searchingIem.toLowerCase()));
 
     // console.log(filteredCafes);
-    // Find corresponding location details for the filtered cafes
+   
     const results = filteredCafes.map((cafe) => {
         const place = places.find((place) => {
             	return  place.id === cafe.place_id
@@ -35,7 +35,7 @@ function findCaliforniaCafes(searchingIem) {
     return results;
  }
 
-// Example Usage
+
 const results = findCaliforniaCafes('Avenue');
 console.log(results);
 
