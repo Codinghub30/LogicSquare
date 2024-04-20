@@ -16,13 +16,13 @@ const EmployeeList = ({
     designation: "",
     department: "",
     age:"",
-  }); // State to hold the values of name and designation for the selected employee
+  }); 
 
   const [searchQuery, setSearchQuery] = useState("");
 
   // Filter employees based on search query
   const filteredEmployees = employees.filter((employee) => {
-    const search = searchQuery.trim().toLowerCase(); // Trim whitespace from the search query
+    const search = searchQuery.trim().toLowerCase(); 
     return (
       employee.name.toLowerCase().includes(search) ||
       employee.designation.toLowerCase().includes(search) ||
@@ -31,7 +31,7 @@ const EmployeeList = ({
   });
 
   const handleEdit = (employee) => {
-    setEditEmployee(employee); // Set the values of name and designation for the selected employee
+    setEditEmployee(employee);
     setIsEditModalOpen(true);
   };
 
