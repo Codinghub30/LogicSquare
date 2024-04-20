@@ -24,17 +24,14 @@ function generateStudentMarkSheets(students, details) {
         }
 
         const markSheet = { name: student.name, Roll: student.Roll, ...subjects, total, status };
-        //If you don't use the spread operator (...) to merge the subjects object into the markSheet object, each subject will be added as a separate property instead of being merged into subjects. Let's see how it looks without the spread operator:
-
-        // Using the spread operator (...) is a concise way to merge objects in JavaScript. It helps to flatten the subjects object and directly add its properties to markSheet, which makes the code cleaner and easier to read.
-
+        
         finalMarkSheets.push(markSheet);
     });
 
     return finalMarkSheets;
 }
 
-// Input data
+
 const students = [
     { name: "Dhishan Debnath", Roll: 1 },
     { name: "Animesh Gupta", Roll: 2 },
@@ -51,7 +48,7 @@ const Details = [
     { Roll: 2, subjects: { math: 55, english: 56, computer: 48, chemistry: 12 } }
 ];
 
-// Generate student mark sheets
+
 const studentsMarkSheets = generateStudentMarkSheets(students, Details);
 
 console.log(studentsMarkSheets);
