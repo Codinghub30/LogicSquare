@@ -1,0 +1,35 @@
+
+.main {
+    background: linear-gradient(to right, #4c77ac, #0091ad); /* Example gradient colors */
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    width: 16%;
+    margin-left: 5%;
+    align-items: center;
+  }
+  
+  .dashboard {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .overview {
+    margin-bottom: 20px;
+  }
+  
+  .actions button {
+    padding: 10px 20px;
+    background-color: #0091ad; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .actions button:hover {
+    background-color: #007999; 
+  }
+  
