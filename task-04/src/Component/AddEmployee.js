@@ -12,7 +12,7 @@ const AddEmployee = ({ isOpen, onClose, addEmployee }) => {
     e.preventDefault();
     addEmployee(name, designation, department, age);
     onClose();
-    // Reset input fields
+   
     setName('');
     setDesignation('');
     setDepartment('');
